@@ -1,0 +1,100 @@
+/* ===== RESET ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body {
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2, #6a11cb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== CONTAINER ===== */
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== CARD ===== */
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    padding: 35px;
+    border-radius: 20px;
+    width: 340px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    color: white;
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* ===== TITLE ===== */
+.card h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+/* ===== SUBTITLE ===== */
+.card p {
+    font-size: 14px;
+    margin-bottom: 25px;
+    opacity: 0.9;
+}
+
+/* ===== INPUT ===== */
+input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    margin-bottom: 15px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* ===== BUTTON ===== */
+button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(135deg, #ff7eb3, #ff758c);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+/* Hover Effect */
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #ff5f6d, #ffc371);
+}
+
+/* ===== RESULT ===== */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #00ffcc;
+}
+
+/* ===== ANIMATION ===== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
